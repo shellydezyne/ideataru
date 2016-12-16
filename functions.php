@@ -61,11 +61,12 @@ function ideataru_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'ideataru_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '0000000',
 		'default-image' => '',
 	) ) );
 }
 endif;
+
 add_action( 'after_setup_theme', 'ideataru_setup' );
 
 /**
@@ -85,6 +86,7 @@ add_action( 'after_setup_theme', 'ideataru_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
 function ideataru_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'ideataru' ),
@@ -138,3 +140,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Register Sidebar
+ */

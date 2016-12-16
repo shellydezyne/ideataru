@@ -46,7 +46,7 @@
  	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
  	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
  	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+<?php wp_head(); ?>
  </head>
  <body data-offset="200" data-spy="scroll" data-target=".primary-navigation">
  	<a id="top"></a>
@@ -170,7 +170,7 @@
  						<li><a href="#service-section">Services</a></li>
  						<li><a href="#our-work">Work</a></li>
  						<li><a href="#our-genius">Team</a></li>
- 						<li><a href="blog.html">Blog</a></li>
+ 						<li><a href="<?php bloginfo('template_directory'); ?>/blog">Blog</a></li>
  						<li><a href="#project-section">Contact</a></li>
  					</ul>
  				</div><!--/.nav-collapse -->

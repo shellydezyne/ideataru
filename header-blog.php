@@ -69,7 +69,7 @@
 	<!-- Header Section -->
 	<header id="header-section" class="header-section">
 		<div class="col-md-2 col-sm-2 col-xs-6 logo-block">
-			<a href="#top"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"/></a>
+			<a href="<?php bloginfo('template_directory'); ?>/home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"/></a>
 		</div>
 		<div class="col-md-10 col-sm-12 col-xs-12 menu-block">
 			<nav class="navbar navbar-default primary-navigation" role="navigation">
@@ -83,12 +83,12 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav pull-right">
-						<li><a href="<?php bloginfo('template_directory'); ?>/index.html">Home</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/home">Home</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/home #service-section">Services</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/home #our-work">Work</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/home #our-genius">Team</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/blog">Blog</a></li>
+						<li><a href="<?php bloginfo('template_directory'); ?>/home #project-section">Contact</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</nav>

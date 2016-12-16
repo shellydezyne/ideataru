@@ -10,10 +10,93 @@
  */
 
 ?>
-<footer id="footer-section" class="footer-section">
-  <div class="back-home">
-    <a href="<?php bloginfo('template_directory'); ?>/index.html">Go Back Home</a>
+
+<footer id="" class="footer-section">
+
+
+
+  <div class="container">
+        	<div class="row">
+<!--  <div class="back-home">
+    <a href="/">Go Back Home</a>
+  </div>-->
+<div class="col-md-4 col-sm-4">
+  <hr>
+
+
   </div>
+  <div class="col-md-4 col-sm-4">
+
+<hr>
+
+
+    <h4 class="widgettitle">Tags::</h4>
+    <div id="Tcomments" class="tab-pane">
+   								<div class="tag-cloud">
+   									<?php
+   									$tags = get_tags();
+   									$html = '';
+   									foreach ( $tags as $tag ) {
+   										$tag_link = get_tag_link( $tag->term_id );
+
+   										$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+
+   										$html .= "{$tag->name}</a>";
+
+
+   									}
+
+
+                    echo $html;
+   									?>
+   								</div>
+   						</div>
+
+  </div>
+
+
+
+    <div class="col-md-4 col-sm-4">
+      <hr>
+
+
+
+<div class="widget footer_widget widget_links">
+    <?php
+    if (! function_exists('catList')) {
+	function catList() {
+		$args = array(
+		'orderby'            => 'name',
+		'order'              => 'ASC',
+		'show_last_update'   => 0,
+		'style'              => 'none',
+		'show_count'         => 1,
+		'hide_empty'         => 1,
+		'use_desc_for_title' => 1,
+		'child_of'           => 0,
+		'current_category'   => 0,
+		'hierarchical'       => true,
+		'number'             => NULL,
+		'echo'               => 1,
+		'depth'              => 1
+		);
+		wp_list_categories( $args );
+	}
+}
+?>
+<h4 class="widgettitle">Categories</h4>
+
+
+ <?php catList(); ;?>
+
+
+   								</div>
+
+</div>
+
+
+
+
 </footer>
 
 
@@ -47,3 +130,11 @@
 
 </body>
 </html>
+
+</div>
+
+</div>
+
+<div class="site-footer-bottom">
+<hr>
+</div>

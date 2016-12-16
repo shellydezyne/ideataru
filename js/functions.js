@@ -20,7 +20,7 @@
 		else
 		{
 			$('.header-section').removeClass("navbar-fixed-top");
-		} // set sticky menu - end		
+		} // set sticky menu - end
 
 		if ($(this).scrollTop() >= 50)
 		{
@@ -42,7 +42,7 @@
 			scrollTop : 0 // Scroll to top of body
 		},800);
 	});
-	
+
 	/* Service Section */
 	$('.service-section').each(function ()
 	{
@@ -53,10 +53,10 @@
 		{
 			$('.service-section .col-md-6:nth-child(even) .service-box-inner').addClass('animated slideInLeft');
 			$('.service-section .col-md-6:nth-child(odd) .service-box-inner').addClass('animated slideInRight');
-						
+
 		});
 	});
-	
+
 	/* Feature Section */
 	$('.features-section').each(function ()
 	{
@@ -69,7 +69,7 @@
 			$('.features-section .col-md-5').addClass('animated slideInRight');
 		});
 	});
-	
+
 	/* Our Work */
 	$('.our-work').each(function ()
 	{
@@ -83,7 +83,7 @@
 			$('.our-work .portfolio-list li').addClass('animated rollIn');
 		});
 	});
-	
+
 	/* WHy Choose US */
 	$('.why-choose').each(function ()
 	{
@@ -95,7 +95,7 @@
 			$('.why-choose .col-md-6').addClass('animated fadeInRight');
 		});
 	});
-	
+
 	/* How We Work */
 	$('.research-slope').each(function ()
 	{
@@ -108,7 +108,7 @@
 			$('.research p').addClass('animated fadeInRight');
 		});
 	});
-	
+
 	$('.we-perfection-slope').each(function ()
 	{
 		var $this = $(this);
@@ -131,7 +131,7 @@
 			$('.clean-code p').addClass('animated fadeInRight');
 		});
 	});
-	
+
 	$('.we-launch-slope').each(function ()
 	{
 		var $this = $(this);
@@ -143,7 +143,7 @@
 			$('.we-launch-slope p').addClass('animated fadeInLeft');
 		});
 	});
-	
+
 	/* 	Application Section */
 	$('.application-section').each(function ()
 	{
@@ -156,29 +156,29 @@
 			$('.application-section .app-content-box').addClass('animated fadeInRight');
 		});
 	});
-	
+
 	/* Our Genius */
 		/* Style 1 */
 	$('.our-genius .style1').each(function ()
 	{
 		var $this = $(this);
 		var myVal = $(this).data("value");
-		
+
 		$this.appear(function()
-		{				
+		{
 			$('.style1').hover(function() {
-				
-				$('#style1-hover').show(); 
-				
+
+				$('#style1-hover').show();
+
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
 				{
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_bar_count-']" ).length;
@@ -190,32 +190,32 @@
 						$("[id*='skill_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
 				});
-			
+
 			});
 			// $('.style1.style-active .hover').css('display','block');
 			$('.style1').css('clip-path','url("#clipPolygon1")');
 		});
-		
+
 		/* Active */
 		$('.style1.style-active').each(function() {
 			$('#style1-hover').css('display','block');
-			
+
 			var $this = $(this);
-			var myVal = $(this).data("value");	
+			var myVal = $(this).data("value");
 
 			$this.appear(function()
 			{
 				var skill_item_count = 0;
-				var skills_count = 0;					
+				var skills_count = 0;
 				skill_item_count = $( "[id*='skill_count-']" ).length;
-				
+
 				var skill_bar_count = 0;
 				var skills_bar_count = 0;
 				skill_bar_count = $( "[id*='skill_bar_count-']" ).length;
@@ -227,7 +227,7 @@
 					$("[id*='skill_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 					// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 				}
-				
+
 				for(var j=1; j<=skill_bar_count; j++)
 				{
 					skills_bar_count = $( "[id*='skill_count-"+j+"']" ).attr( "data-skills_percent" );
@@ -243,21 +243,21 @@
 		var myVal = $(this).data("value");
 
 		$this.appear(function()
-		{			
+		{
 			$('.style3').hover(function() {
-				
+
 				$('.style1.style-active .hover').css('display','none');
 				$('#style1-hover').css('display','none');
-				$('#style3-hover').show(); 
+				$('#style3-hover').show();
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
 				{
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_3_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_3_bar_count-']" ).length;
@@ -269,22 +269,22 @@
 						$("[id*='skill_3_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_3_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_3_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
-				});				
+				});
 			},
-			function() { 
+			function() {
 				$('#style3-hover').hide();
 				$('.style1.style-active .hover').css('display','block');
 				$('#style1-hover').show();
-				
+
 			});
 		});
-		$('.style3').css('clip-path','url("#clipPolygon3")');		
+		$('.style3').css('clip-path','url("#clipPolygon3")');
 	});
 		/* Style 4 */
 	$('.our-genius .style4').each(function ()
@@ -295,19 +295,19 @@
 		$this.appear(function()
 		{
 			$('.style4').hover(function() {
-				
-				$('#style4-hover').show();				
+
+				$('#style4-hover').show();
 				$('.style1.style-active .hover').css('display','none');
 				$('#style1-hover').hide();
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
 				{
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_4_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_4_bar_count-']" ).length;
@@ -319,15 +319,15 @@
 						$("[id*='skill_4_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_4_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_4_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
 				});
-			
-			}, function() { 
+
+			}, function() {
 				$('#style4-hover').hide();
 				$('.style1.style-active .hover').css('display','block');
 				$('#style1-hover').show();
@@ -344,19 +344,19 @@
 		$this.appear(function()
 		{
 			$('.style5').hover(function() {
-				
+
 				$('#style5-hover').show();
 				$('.style1.style-active .hover').css('display','none');
 				$('#style1-hover').hide();
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
 				{
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_5_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_5_bar_count-']" ).length;
@@ -368,14 +368,14 @@
 						$("[id*='skill_5_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_5_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_5_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
 				});
-			}, function() { 
+			}, function() {
 				$('#style5-hover').hide();
 				$('.style1.style-active .hover').css('display','block');
 				$('#style1-hover').show();
@@ -384,7 +384,7 @@
 		$('.style5').css('clip-path','url("#clipPolygon5")');
 	});
 		/* Style 6 */
-	$('.our-genius .style6').each(function () 
+	$('.our-genius .style6').each(function ()
 	{
 		var $this = $(this);
 		var myVal = $(this).data("value");
@@ -392,19 +392,19 @@
 		$this.appear(function()
 		{
 			$('.style6').hover(function() {
-				
+
 				$('#style6-hover').show();
 				$('.style1.style-active .hover').css('display','none');
 				$('#style1-hover').hide();
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
 				{
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_6_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_6_bar_count-']" ).length;
@@ -416,15 +416,15 @@
 						$("[id*='skill_6_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_6_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_6_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
 				});
-				
-			}, function() { 
+
+			}, function() {
 				$('#style6-hover').hide();
 				$('.style1.style-active .hover').css('display','block');
 				$('#style1-hover').show();
@@ -432,7 +432,7 @@
 		});
 		$('.style6').css('clip-path','url("#clipPolygon6")');
 	});
-	
+
 		/* Style 7 */
 	$('.our-genius .style7').each(function ()
 	{
@@ -442,20 +442,20 @@
 		$this.appear(function()
 		{
 			$('.style7').hover(function() {
-				
+
 				$('#style7-hover').show();
 				$('.style1.style-active .hover').css('display','none');
 				$('#style1-hover').hide();
 				var $this = $(this);
-				var myVal = $(this).data("value");	
+				var myVal = $(this).data("value");
 
 				$this.appear(function()
-				{	
-				
+				{
+
 					var skill_item_count = 0;
-					var skills_count = 0;					
+					var skills_count = 0;
 					skill_item_count = $( "[id*='skill_6_count-']" ).length;
-					
+
 					var skill_bar_count = 0;
 					var skills_bar_count = 0;
 					skill_bar_count = $( "[id*='skill_6_bar_count-']" ).length;
@@ -467,14 +467,14 @@
 						$("[id*='skill_7_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 						// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 					}
-					
+
 					for(var j=1; j<=skill_bar_count; j++)
 					{
 						skills_bar_count = $( "[id*='skill_7_count-"+j+"']" ).attr( "data-skills_percent" );
 						$("[id*='skill_7_bar_count-"+j+"']").css({'width': skills_bar_count+'%'});
 					}
 				});
-			}, function() { 
+			}, function() {
 				$('#style7-hover').hide();
 				$('.style1.style-active .hover').css('display','block');
 				$('#style1-hover').show();
@@ -482,12 +482,12 @@
 		});
 		$('.style7').css('clip-path','url("#clipPolygon7")');
 	});
-	
+
 	$('.our-genius .style2').each(function ()
-	{		
-		$('.style2').css('clip-path','url("#clipPolygon2")');	
-	});	
-	
+	{
+		$('.style2').css('clip-path','url("#clipPolygon2")');
+	});
+
 	$('.our-genius').each(function ()
 	{
 		var $this = $(this);
@@ -504,10 +504,10 @@
 			$('.our-genius .genius-gallery .style7').addClass('animated fadeInRight');
 		});
 	});
-	
-	
+
+
 	/* Blog Section */
-	
+
 	$('.blog-section').each(function ()
 	{
 		var $this = $(this);
@@ -530,36 +530,36 @@
 		{
 			$('.client-section .client-style1').addClass('animated fadeInDown');
 			$('.client-section .client-style2').addClass('animated fadeInLeft');
-			$('.client-section .client-style3').addClass('animated fadeInUp');			
+			$('.client-section .client-style3').addClass('animated fadeInUp');
 		});
-		
+
 		$('.client-style1').hover(function() {
 			$('.client-style1').addClass('client-active');
 			$('.client-style2').removeClass('client-active');
 			$('.client-style1:hover').css('clip-path','url("#client-12")');
-		}, function() { 
+		}, function() {
 			$('.client-style2').addClass('client-active');
 			$('.client-style1').removeClass('client-active');
 			$('.client-style1').css('clip-path','url("#client-1")');
 			$('.client-style2').css('clip-path','url("#client-21")');
 		});
-		
+
 		$('.client-style3').hover(function() {
 			$('.client-style3').addClass('client-active');
 			$('.client-style2').removeClass('client-active');
 			$('.client-style3').css('clip-path','url("#client-31")');
-		}, function() { 
+		}, function() {
 			$('.client-style2').addClass('client-active');
 			$('.client-style3').removeClass('client-active');
 			$('.client-style3').css('clip-path','url("#client-3")');
 			$('.client-style2').css('clip-path','url("#client-21")');
 		});
-		
-		
+
+
 		//$('.client-style2').css('clip-path','url("#client-2")');
 		//$('.client-style3').css('clip-path','url("#client-3")');
 	});
-	
+
 	/* Brag About Section */
 	$('.brag-about-section').each(function ()
 	{
@@ -583,8 +583,8 @@
 		{
 			$('.social-main > div').addClass('animated bounceInUp');
 		});
-	});	
-	
+	});
+
 	/* Project Section */
 	$('.project-section').each(function ()
 	{
@@ -600,14 +600,14 @@
 			$('.project-section .send-msg h2').addClass('animated fadeInRight');
 			$('.project-section .send-msg').addClass('animated fadeInRight');
 		});
-	});	
+	});
 
-	
+
 	/*
 	$('#creative-our-skill-section').each(function ()
-	{		
+	{
 		var $this = $(this);
-		var myVal = $(this).data("value");	
+		var myVal = $(this).data("value");
 
 		$this.appear(function()
 		{
@@ -622,13 +622,13 @@
 				$("[id*='skill_count-"+i+"']").animateNumber({ number: skills_count }, 2000);
 				// $("[id*='skill_count-"+i+"']").css('width', skills_count);
 			}
-		});				
+		});
 	});	*/
-	
+
 	$('.dial').each(function ()
 	{
 		var $this = $(this);
-		var myVal = $(this).data("value");		
+		var myVal = $(this).data("value");
 
 		$this.appear(function()
 		{
@@ -645,7 +645,7 @@
 			});
 		});
 	});
-	
+
 	// 08 - Line Progress Bar
 	/*$('.skills-wrapper').appear(function()
 	{
@@ -659,10 +659,10 @@
 			$("[class*='skill_count-"+i+"']").css('width', skills_count);
 		}
 	},{accX: 0, accY: -70});*/
-	
-	
-	
-	
+
+
+
+
 	/* Statistics Section */
 	$('.statistics-section').each(function ()
 	{
@@ -677,8 +677,8 @@
 			$('#videos').animateNumber({ number: 2478 }, 2000);
 		});
 	});
-	
-	/* Event - Document Ready /- */	
+
+	/* Event - Document Ready /- */
 	$(document).ready(function($)
 	{
 		var scroll	=	$(window).scrollTop();
@@ -707,7 +707,7 @@
 			{
 				if( $(anchor.attr('href')).length )
 				{
-					$('html, body').stop().animate( { scrollTop: $(anchor.attr('href')).offset().top - 72 }, 1500, 'easeInOutExpo' );					
+					$('html, body').stop().animate( { scrollTop: $(anchor.attr('href')).offset().top - 72 }, 1500, 'easeInOutExpo' );
 				}
 				event.preventDefault();
 			}
@@ -722,23 +722,23 @@
 			{
 				if( $(anchor.attr('href')).length )
 				{
-					$('html, body').stop().animate( { scrollTop: $(anchor.attr('href')).offset().top - 150 }, 1500, 'easeInOutExpo' );			
+					$('html, body').stop().animate( { scrollTop: $(anchor.attr('href')).offset().top - 150 }, 1500, 'easeInOutExpo' );
 				}
 				event.preventDefault();
 			}
 		});
-		
+
 		$('.our-work .portfolio-categories li > a').on('click', function(event)
 		{
 			$('.our-work .portfolio-categories li > a').removeClass('active');
 			$(this).addClass('active');
 		});
-		
-		
+
+
 		/* Window Hight Set to Elements /- */
 		var window_height = $(window).height();
 		var window_width = $(window).width();
-		
+
 		/*$("#client-testimonials").owlCarousel(
 		{
 			autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -748,9 +748,9 @@
 			navigation : true,
 			pagination: false
 		});*/
-		
-		
-		
+
+
+
 		/* Skill Section */
 		/*$('.portfolio-accordion-skill .skill-progress-box').appear(function() {
 			$('.illustrator').css('width', '80%');
@@ -761,13 +761,13 @@
 			$('.coreldraw').css('width', '90%');
 			}
 		);*/
-		
+
 		// picker buttton
 		$(".picker_close").click(function()
 		{
 			$("#choose_color").toggleClass("position");
 		});
-		
+
 		/* Lightbox for Highlights Gallery	*/
 		/*$('#our-team-section .team-inner .team-member-image').magnificPopup({
 			delegate: 'a',
@@ -786,7 +786,7 @@
 				}*/
 			//}
 		//});
-		
+
 	});
 	/* document.ready /- */
 
@@ -801,7 +801,7 @@
 	/* Event - Window Resize /- */
 
 	var $itemsHolder = $('.portfolio-list');
-	var $itemsClone = $itemsHolder.clone(); 
+	var $itemsClone = $itemsHolder.clone();
 	var $filterClass = "";
 	$('.portfolio-categories li').click(function(e)
 	{
@@ -821,12 +821,12 @@
 			duration: 1000
 		});
 	});
-	
+
 	$('#photos-slider').superslides({
 		animation: 'fade',
 		pagination: true
 	});
-	
+
 	var wow = new WOW(
 	{
 		boxClass:     'wow',      // animated element css class (default is wow)
@@ -839,7 +839,7 @@
 
 /* Event - Window Load */
 $(window).load(function()
-{		
+{
 	/* Loader */
 	$("#site-loader").delay(2000).fadeOut("slow");
 });

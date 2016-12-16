@@ -10,6 +10,8 @@
  */
 
 ?>
+<?php wp_footer(); ?>
+
 <footer id="footer-section" class="footer-section">
   <div class="footer-item">
     <i class="icon_mail_alt"></i>

@@ -967,38 +967,11 @@ get_header();
  </div>
  <!-- Brag About Section Over -->
 
- <!-- Social Section -->
- <div id="social-section" class="social-main">
-   <div class=" icon-social-google no-padding">
-     <a href="#"><i class="social_googleplus "></i></a>
-   </div>
-   <div class="icon-social-tumblr no-padding">
-     <a href="#"><i class="social_tumblr"></i></a>
-   </div>
-   <div class="icon-social-facebook no-padding">
-     <a href="#"><i class=" social_facebook"></i></a>
-   </div>
-   <div class="icon-social-vimoe no-padding">
-     <a href="#"><i class="social_vimeo "></i></a>
-   </div>
-   <div class="icon-social-twitter no-padding">
-     <a href="#"><i class="social_twitter "></i></a>
-   </div>
-   <div class="icon-social-rss no-padding">
-     <a href="#"><i class="social_rss "></i></a>
-   </div>
-   <div class="icon-social-dribble no-padding">
-     <a href="#"><i class="social_dribbble "></i></a>
-   </div>
-   <div class="icon-social-pinterest no-padding">
-     <a href="#"><i class="social_pinterest "></i></a>
-   </div>
- </div>
- <!-- Social Section Over -->
+
 
  <!-- Map Section -->
  <div id="map-section" class="map-section">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981" width=80%></iframe>
  </div>
  <!-- Map Section Over -->
 
@@ -1017,6 +990,15 @@ get_header();
      </div>
    </div>
  </div>
+ <?php
+
+
+
+echo do_shortcode("<div style='text-align:right'>'[feather_share]'</div>");
+?>
+<br>
+<br>
+<br>
  <!-- Project Section Over -->
 <?php
 get_footer(); ?>

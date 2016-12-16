@@ -14,168 +14,51 @@
 
     get_template_part('header','blog'); ?>
 
-<div class="blog-page">
-  <div class="container no-padding">
-    <div class="blog-inner">
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>07</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image1.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
-      </div>
 
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>27</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image2.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>06</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image3.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>07</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image4.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
-      </div>
+    <div class="blog-page">
+  		<div class="container no-padding">
+  			<div class="blog-inner">
 
 
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>27</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image5.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
-      </div>
+        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+                    <?php
+                		if ( have_posts() ) :
 
-      <div class="col-md-4 col-sm-6 post">
-        <div class="entry-date">
-          <div class="date">
-            <h2>06</h2>
-            <h4>MAY</h4>
-          </div>
-          <div class="icon">
-            <i class="fa fa-heart"></i>
-            <i class="fa fa-comments"></i>
-          </div>
-        </div>
-        <div class="entry-cover">
-          <img src="<?php bloginfo('template_directory'); ?>/images/blog/section/image6.jpg" alt="cover image"/>
-          <div class="entry-header">
-            <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="entry-title">A BEAUTIFUL VIEW</a>
-          </div>
-          <div class="post-date">
-            <span class="entry-date">November 21, 2013</span>
-            <span class="comments-link"><a href="#">4 COMMENTS</a></span>
-            <span class="post-views"><i class="fa fa-heart"></i> 60</span>
-          </div>
-          <p class="post-item">Vestibulum ac diam sit amet quam vehicu la elementum sed sit amet dui. Praesent sap ien massa, convallis a pellentesque nec, egestas non nisvamus.</p>
-          <a href="<?php bloginfo('template_directory'); ?>/blog-post.html" class="read-more">read more</a>
-        </div>
+                			/*if ( is_home() && ! is_front_page() ) : ?>
+                				<header>
+                					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                				</header>
+                			<?php
+                    endif;*/
+
+                			/* Start the Loop */
+                			while ( have_posts() ) : the_post();
+
+                				/*
+                				 * Include the Post-Format-specific template for the content.
+                				 * If you want to override this in a child theme, then include a file
+                				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                				 */
+
+                				//get_template_part( 'template-parts/content', get_post_format() );
+                        get_template_part( 'template-parts/content', '' );
+                        //get_template_part( 'template-parts/content', 'none' );
+                			endwhile;
+
+                			//the_posts_navigation();
+
+                		else :
+
+                			get_template_part( 'template-parts/content', 'none' );
+
+                		endif; ?>
+
+</div>
       </div>
     </div>
-  </div>
-</div>
+
+
+
 <?php
-  get_template_part('footer','blog');
+get_template_part('footer','blog');
  ?>
